@@ -5,7 +5,7 @@ Introduction
 
 Cd into the parent dir of ``Readme``.
 
-The doc gneration build is served by ``pip install test_requirements.txt``
+The doc generation build is served by ``pip install test_requirements.txt``
 
 Run to generate the ``.rst`` files
 ```sphinx-apidoc -f -d 4 --implicit-namespaces -o .docs ../tests```

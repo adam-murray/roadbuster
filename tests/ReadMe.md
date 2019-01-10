@@ -7,11 +7,10 @@ Cd into the parent dir of ``Readme``.
 
 The doc gneration build is served by ``pip install test_requirements.txt``
 
-cd int ``docs/`` where the conf.py is situated
-
-_maybe:
+Run to generate the ``.rst`` files
 ```sphinx-apidoc -f -d 4 --implicit-namespaces -o .docs ../tests```
 
+Run to generate the documention
 ```sphinx-build . ../docs```
 
 

@@ -153,6 +153,7 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'djangocms_fil_bootstrap',
     'rangefilter',
+    'djangocms_references',
 )
 
 LANGUAGES = (

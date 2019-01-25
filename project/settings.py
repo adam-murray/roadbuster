@@ -189,6 +189,8 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+CMS_SIDEFRAME_ENABLED = False  # Disable the CMS sidefrane
+
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,

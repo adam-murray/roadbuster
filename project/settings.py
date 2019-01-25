@@ -153,6 +153,7 @@ INSTALLED_APPS = (
     'roadbuster',
     'debug_toolbar',
     'djangocms_fil_bootstrap',
+    'djangocms_references',
 )
 
 LANGUAGES = (

@@ -16,6 +16,7 @@ urlpatterns = [
    url(r'^sitemap\.xml$', sitemap,
        {'sitemaps': {'cmspages': CMSSitemap}}),
    url(r'^search/', include('haystack.urls')),
+   url(r'^references/', include('djangocms_references.urls'))
 ]
 
 # This is only needed when using runserver.

@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'djangocms_version_locking',
     'djangocms_moderation',
     'djangocms_contentexpiry',
+    'djangocms_navigation',
     'haystack',
     'djangocms_internalsearch',
     'adminsortable2',
@@ -152,8 +153,8 @@ INSTALLED_APPS = (
     'roadbuster',
     'debug_toolbar',
     'djangocms_fil_bootstrap',
-    'rangefilter',
     'djangocms_references',
+
 )
 
 LANGUAGES = (
@@ -189,6 +190,8 @@ CMS_TEMPLATES = (
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
+
+CMS_SIDEFRAME_ENABLED = False  # Disable the CMS sidefrane
 
 DATABASES = {
     'default': {

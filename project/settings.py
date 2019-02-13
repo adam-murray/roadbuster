@@ -154,6 +154,8 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'djangocms_fil_bootstrap',
     'djangocms_references',
+    'djangocms_url_manager',
+
 )
 
 LANGUAGES = (

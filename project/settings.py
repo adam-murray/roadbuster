@@ -154,6 +154,7 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'djangocms_fil_bootstrap',
     'djangocms_references',
+    'frontend_editable_admin_model',
 )
 
 LANGUAGES = (

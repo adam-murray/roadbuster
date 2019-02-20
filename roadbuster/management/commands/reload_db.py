@@ -1,4 +1,5 @@
 import os
+from django.conf import settings
 from django.core.management import call_command
 from django.core.management.commands import runserver
 
@@ -15,6 +16,6 @@ class Command(runserver.Command):
             call_command('flush', '--noinput')
             call_command('clear_index', '--noinput')
             call_command('migrate')
-            call_command('bootstrap', '--all')
+            call_command('bootstrap', *settings.BOOTSTRAP_DATASETS)
 
         super().handle(*args, **options)

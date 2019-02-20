@@ -235,3 +235,7 @@ HAYSTACK_CONNECTIONS = {
        'INDEX_NAME': 'haystack',
    },
 }
+
+BOOTSTRAP_DATASETS = [
+    '--all'
+]

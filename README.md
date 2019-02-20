@@ -4,8 +4,7 @@ Roadbuster
 
 Overview
 ============
-A lightweight django project with helper management commands to speed up djangocms development/test workflow (especially django_moderation).
-
+A lightweight django project with helper management commands to speed up djangocms development/test workflow (especially django_moderation). It can be considered an integration testing environment.
 
 Extras
 ---------
@@ -27,6 +26,7 @@ This assumes you have a python virtual environment setup with djangocms installe
     mkvirtualenv roadbuster
     pip install -r dev_requirements.txt
 ```
+
 
 Then, pip install the plugin/application under test/development (e.g django_moderation) using ```pip -e <path_to_plugin>```
 
@@ -55,6 +55,18 @@ Usage
       python path/to/package/setup.py develop --uninstall
       pip install -r dev_requirements.txt
    ```
+
+4) The default datasets that will be run can be changed using app settings. The `reload_db` command runs the djangocms-fil-bootstrap add-on as a CLI command. This can be configured to run various data sets as required. By default it runs all datasets available in bootstrap. The list of datasets to run can be altered using settings. E.g. 
+
+  ```
+    BOOTSTRAP_DATASETS = [
+      'roles',
+      'demo'
+    ]
+  ```
+
+These datasets must exist in the `djangocms-fil-bootstrap/djangocms_fil_bootstrap/builtin_data` folder. 
+
 
 Contribution
 =============

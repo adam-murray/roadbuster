@@ -14,3 +14,4 @@ Django==1.11.15
 -e git+git@github.com:FidelityInternational/djangocms-references.git@master#egg=djangocms_references
 -e git+git@github.com:divio/djangocms-url-manager.git@master#egg=djangocms_url_manager
 -r ./requirements.txt
+-e git+git@github.com:FidelityInternational/djangocms-pageadmin.git@master#egg=djangocms_pageadmin

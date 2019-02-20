@@ -155,6 +155,7 @@ INSTALLED_APPS = (
     'djangocms_fil_bootstrap',
     'djangocms_references',
     'djangocms_url_manager',
+    'djangocms_pageadmin',
 )
 
 LANGUAGES = (

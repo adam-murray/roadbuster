@@ -126,8 +126,8 @@ INSTALLED_APPS = (
     'sekizai',
     'treebeard',
     'djangocms_text_ckeditor',
-    'filer',
     'djangocms_versioning_filer',
+    'filer',
     'easy_thumbnails',
     'djangocms_column',
     'djangocms_file',
@@ -237,5 +237,6 @@ HAYSTACK_CONNECTIONS = {
 }
 
 BOOTSTRAP_DATASETS = [
-    '--all'
+    'roles',
+    'demo',
 ]

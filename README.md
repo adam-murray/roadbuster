@@ -22,9 +22,15 @@ Installation & Setup
 
 This assumes you have a python virtual environment setup with djangocms installed. If not run:
 
-```
+```bash
     mkvirtualenv roadbuster
     pip install -r dev_requirements.txt
+```
+
+For people on the FIL network with SSH blocked use:
+
+```bash
+    pip install -r http_dev_requirements.txt
 ```
 
 
@@ -36,12 +42,12 @@ Usage
 
 1) To reset you database and re-populate it with CMS Pages and Moderation Workflows run the management command:
 
-``` 
+```
     python manage.py reload_db
 ```
 
 2) To drop the DB and refresh it to a brand new blank database. The reload_db command will also need to be ran manually.
-``` 
+```
     python manage.py drop_db
 ```
 
@@ -54,6 +60,11 @@ Usage
    ```
       python path/to/package/setup.py develop --uninstall
       pip install -r dev_requirements.txt
+   ```
+   Again if you are being blocked on SSH use:
+
+   ```bash
+    pip install -r http_dev_requirements.txt
    ```
 
 4) The default datasets that will be run can be changed using app settings. The `reload_db` command runs the djangocms-fil-bootstrap add-on as a CLI command. This can be configured to run various data sets as required. By default it runs all datasets available in bootstrap. The list of datasets to run can be altered using settings. E.g. 
